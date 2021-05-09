@@ -1,0 +1,107 @@
+.services-container {
+  background: #f4f4f4;
+  padding: 3%;
+  padding-bottom: 30px;
+
+
+  .services--tabs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ant-tabs {
+      .ant-tabs-tab {
+        .ant-tabs-tab-btn {
+          color: rgb(240,205,47);
+          opacity: 0.7;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .ant-tabs-tab-active{
+        background-color: rgb(240,205,47);
+
+        .ant-tabs-tab-btn{
+          color: white;
+          font-weight: 500;
+        }
+        
+      }
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .ant-tabs-tab-btn {
+      width: calc(17vw);
+    }
+  }
+
+  .card-container {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 0 5%;
+
+    .ant-col {
+      height: inherit;
+    }
+  }
+
+  .label {
+    background: dimgray;
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 0;
+    h1,
+    h3 {
+      margin: 0;
+      color: bisque;
+      font-size: 30px;
+      border-bottom: 1px solid;
+      border-color: coral;
+      font-family: cursive;
+    }
+
+    h3 {
+      font-size: 20px;
+      border-bottom: transparent;
+    }
+  }
+
+  .ant-col {
+    height: fit-content;
+  }
+
+  @media screen and (max-width: 899px) {
+    .label {
+      h1,
+      h3 {
+        margin: 0;
+        color: bisque;
+        font-size: 30px;
+        border-bottom: 1px solid;
+        border-color: coral;
+        font-family: cursive;
+      }
+
+      h3 {
+        font-size: 14px;
+        border-bottom: transparent;
+      }
+    }
+  }
+}
+
+
+
+
+

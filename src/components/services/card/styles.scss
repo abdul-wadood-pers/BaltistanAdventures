@@ -1,0 +1,88 @@
+.services-card-container {
+  height: 100%;
+
+  .service-title{
+    font-size: 24px;
+    color:rgba(0, 0, 0, 0.67);
+    text-align: center;
+
+
+  }
+
+  .service-title::after {
+    border-bottom: 1px solid #ccc;
+    color: rgb(240,205,47);
+    content: "*";
+    display: flex;
+    font-family: fontawesome;
+    font-size: 27px;
+    height: 0;
+    line-height: 0.3;
+    margin: 18px auto 5px;
+    padding: 0;
+    width: 60%;
+    justify-content: center;
+  }
+
+  .ant-card {
+    height: 100%;
+  }
+  .ant-card-cover {
+    height: 195px;
+    object-fit: contain;
+    overflow: hidden;
+
+    img {
+      height: inherit;
+    }
+
+    :hover{
+        transform: scale(1.2);  
+    }
+  }
+
+  .ant-card-body {
+    height: calc(100% - 250px);
+  }
+
+  .ant-card-actions {
+    padding: 0 30px;
+
+    a {
+      background-color: rgb(240,205,47);
+      color: white !important;
+      padding: 7px;
+      border-radius: 4px;
+    }
+
+    .ant-btn {
+      border-radius: 5px;
+
+      a {
+        color: white;
+      }
+    }
+
+    .ant-btn-primary:active {
+      background-color: #40a9ff;
+      color: white;
+    }
+  }
+
+  .ant-card-meta-title {
+    white-space: break-spaces;
+  }
+
+  @media screen and (max-width: 899px) {
+    .ant-card-meta-description {
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 1;
+      font-size: 12px;
+      text-align: justify;
+    }
+
+    .flip-card {
+      height: 400px;
+    }
+  }
+}

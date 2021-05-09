@@ -1,0 +1,80 @@
+.contact-us-container {
+  background: black;
+  opacity: 0.7;
+  padding: 3% 0;
+
+  
+
+  .main-heading {
+    .ant-typography {
+      color: white;
+      opacity: 0.7;
+    }
+  }
+
+  .details-text {
+    .ant-typography {
+      color: white;
+      opacity: 0.7;
+    }
+  }
+
+  .contact-platforms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .platform {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 010px;
+
+      .link{
+        color: #1890ff
+      }
+
+      .platform-name {
+        flex: 2;
+        color: white;
+        opacity: 0.7;
+        margin:0;
+      }
+
+      .platform-icon {
+        flex: 1;
+        color: white;
+        opacity: 0.7;
+        margin:0;
+        font-size: 16px;
+
+      }
+
+      .platform-value {
+        flex: 6;
+        color: white;
+        opacity: 0.7;
+        margin:0
+
+      }
+    }
+
+    @media screen and (max-width: 899px) {
+      .platform {
+        padding: 0 3%;
+        .platform-name {
+          flex: 5;
+          font-size: 16px;
+        }
+
+        .platform-icon {
+          flex: 2;
+        }
+
+        .platform-value {
+          flex: 12;
+          word-break: break-all;
+        }
+      }
+    }
+  }
+}
